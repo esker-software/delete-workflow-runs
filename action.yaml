@@ -23,6 +23,10 @@ inputs:
     required: true
     default: 6
 
+  workflow_names:
+    description: 'Restrict deletion to these workflow names.'
+    required: false    
+
 runs:
   using: 'node12'
   main: 'dist/index.js'
