@@ -124,11 +124,11 @@ async function run() {
 
           core.debug(`Deleting workflow run ${run_id}`);
 
-          /*await octokit.actions.deleteWorkflowRun({
+          await octokit.actions.deleteWorkflowRun({
             owner: repo_owner,
             repo: repo_name,
             run_id: run_id
-          });*/
+          });
 
           console.log(`🧹 Delete workflow run ${run_id} (${run_name})`);
         }
