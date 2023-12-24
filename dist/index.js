@@ -58,7 +58,7 @@ async function run() {
             console.log(`💡 Registering workflow id ${response.data.workflows[index].id} (${response.data.workflows[index].name})`);
           }
           else {
-            console.log(`💤 Skipping ${response.data.workflows[index].id} (${response.data.workflows[index].name})`);
+            console.log(`💤 Skipping workflow id ${response.data.workflows[index].id} (${response.data.workflows[index].name})`);
           }
         }
       }
