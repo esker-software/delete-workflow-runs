@@ -38,6 +38,7 @@ async function run() {
       });
       
       let length = response.data.workflows.length;
+      console.log("⭐ Retrieved workflows count: " + response.data.workflows.length)
       
       if (length < 1) {
         break;
@@ -55,6 +56,9 @@ async function run() {
             del_runs[response.data.workflows[index].id].gh_wf_name = response.data.workflows[index].name;
             wf_ids.push(response.data.workflows[index].id);
             console.log(`💡 Registering workflow id ${response.data.workflows[index].id} (${response.data.workflows[index].name})`);
+          }
+          else {
+            console.log(`💤 Skipping ${response.data.workflows[index].id} (${response.data.workflows[index].name})`);
           }
         }
       }
