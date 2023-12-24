@@ -38,7 +38,7 @@ async function run() {
       });
       
       let length = response.data.workflows.length;
-      console.log("⭐ Retrieved workflows count: " + response.data.workflows.length)
+      console.log("⭐ Retrieved workflows count: " + length)
       
       if (length < 1) {
         break;
@@ -84,6 +84,7 @@ async function run() {
         break;
       }
       else {
+        console.log("⭐ Retrieved workflows runs count: " + length)
         for (index = 0; index < length; index++) {
           if(wf_ids.length > 0 && !wf_ids.includes(response.data.workflow_runs[index].workflow_id)) {
             continue;
