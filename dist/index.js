@@ -140,7 +140,7 @@ async function run() {
           }
         }
 
-        console.log(`✅ ${arr_length} workflow runs are deleted for ${run_name}.`);
+        console.log(`✅ ${arr_length} workflow runs deleted`);
       }
     }
   }
