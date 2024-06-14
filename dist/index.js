@@ -135,7 +135,7 @@ async function run() {
             run_id: run_id
           });
 
-          if(index%100) {
+          if(index%100==0) {
             console.log(`🧹 100 workflow runs deleted for ${run_name}`);
           }
         }
